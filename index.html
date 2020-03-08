@@ -15,33 +15,37 @@
   <tbody>
     <tr>
 
-      <td><a onclick="myAudioFunction('1');">a</a></td>
-      <td><a onclick="myAudioFunction('2');">and</a></td>
-      <td><a onclick="myAudioFunction('3');">be</a></td>
-      <td><a onclick="myAudioFunction('4');">I</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('1');">a</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('2');">and</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('3');">be</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('4');">I</a></td>
     </tr>
     <tr>
 
-      <td><a onclick="myAudioFunction('5');">in</a></td>
-      <td><a onclick="myAudioFunction('6');">is</a></td>
-      <td><a onclick="myAudioFunction('7');">it</a></td>
-      <td><a onclick="myAudioFunction('8');">of</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('5');">in</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('6');">is</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('7');">it</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('8');">of</a></td>
     </tr>
     <tr>
 
-      <td><a onclick="myAudioFunction('9');">that</a></td>
-      <td><a onclick="myAudioFunction('10');">the</a></td>
-      <td><a onclick="myAudioFunction('11');">to</a></td>
-      <td><a onclick="myAudioFunction('12');">was</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('9');">that</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('10');">the</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('11');">to</a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('12');">was</a></td>
     </tr>
   </tbody>
 </table>
 
 <script>
-
+     var aAudio;
      function myAudioFunction(number) {
-        var aAudio = new Audio('audio/'+number+'.m4a')
-        aAudio.play();
+         if (aAudio) {
+           aAudio.pause();
+         }
+         aAudio = new Audio('audio/'+number+'.m4a')
+         aAudio.play();
+
      }
  </script>
 
