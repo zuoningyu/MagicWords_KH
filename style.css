@@ -5,3 +5,10 @@
   color: #fff;
   font-size: 3rem;
 }
+
+button{
+  color: #fff;
+  background-color: #ff4c68;
+  border: none;
+  width: 100%;
+}
