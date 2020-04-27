@@ -16,35 +16,35 @@
   <tbody>
     <tr>
 
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('1');"><button type="button">a</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('2');"><button type="button">and</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('3');"><button type="button">be</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('4');"><button type="button">I</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('a');"><button type="button">a</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('and');"><button type="button">and</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('be');"><button type="button">be</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('I');"><button type="button">I</button></a></td>
     </tr>
     <tr>
 
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('5');"><button type="button">in</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('6');"><button type="button">is</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('7');"><button type="button">it</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('8');"><button type="button">of</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('in');"><button type="button">in</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('is');"><button type="button">is</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('it');"><button type="button">it</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('of');"><button type="button">of</button></a></td>
     </tr>
     <tr>
 
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('9');"><button type="button">that</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('10');"><button type="button">the</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('11');"><button type="button">to</button></a></td>
-      <td><a style="cursor:pointer;" onclick="myAudioFunction('12');"><button type="button">was</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('that');"><button type="button">that</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('the');"><button type="button">the</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('to');"><button type="button">to</button></a></td>
+      <td><a style="cursor:pointer;" onclick="myAudioFunction('was');"><button type="button">was</button></a></td>
     </tr>
   </tbody>
 </table>
 
 <script>
      var aAudio;
-     function myAudioFunction(number) {
+     function myAudioFunction(word) {
          if (aAudio) {
            aAudio.pause();
          }
-         aAudio = new Audio('audio/'+number+'.m4a')
+         aAudio = new Audio('audio/Golden'+word+'.m4a')
          aAudio.play();
 
      }
