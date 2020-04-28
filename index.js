@@ -2,7 +2,9 @@
   const array = {
     Golden : ["a","and","be","I","in","is","it","of","that","the","to","was"],
     Blue : ["an","by","do","go","if","me","my","no","or","up"],
-    Red : ["all","are","as","at","but","for","had","have","he","her","his","not","on","one","said","so","they","we","with","you"]
+    Red : ["all","are","as","at","but","for","had","have","he","her","his","not","on","one","said","so","they","we","with","you"],
+    Mix : ["a","and","be","I","in","is","it","of","that","the","to","was","an","by","do","go","if","me","my","no","or","up","all",
+    "are","as","at","but","for","had","have","he","her","his","not","on","one","said","so","they","we","with","you"]
   }
 
   var table = document.getElementById('myTable');
