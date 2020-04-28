@@ -80,12 +80,14 @@ function clickWords() {
     var randomArray = array[navTitle].slice();
     randomArray.sort(function(a, b){return 0.5 - Math.random()});
     for (var i = 0; i < cells.length; i++) {
-      cells[i].innerText = randomArray[i]
+    //  cells[i].innerText = randomArray[i]
+      cells[i].innerHTML = '<button type="button" class="btn btn-outline-light btn-block btn-custom">' + randomArray[i] + '</button>'
     }
   }
 
   function reset(){
     for (var i = 0; i < cells.length; i++) {
-      cells[i].innerText = array[navTitle][i];
+      //cells[i].innerText = array[navTitle][i];
+      cells[i].innerHTML = '<button type="button" class="btn btn-outline-light btn-block btn-custom">' + array[navTitle][i] + '</button>'
     }
   }
