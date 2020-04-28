@@ -1,14 +1,49 @@
+
 .words{
   text-align: center;
-  padding: 7% 15%;
+  padding: 7% 15% 2% 15%;
   background-color: #ff4c68;
   color: #fff;
   font-size: 3rem;
 }
 
-button{
-  color: #fff;
+
+
+.button-random{
   background-color: #ff4c68;
-  border: none;
-  width: 100%;
+  padding: 0 15% 7% 15%;
+}
+
+.reset-button{
+  margin: 0 3%;
+  width: 106px;
+}
+
+td {
+  width: 150px;
+}
+
+
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+
+
+.nav-item{
+padding: 0 10px;
+}
+
+h2{
+  padding: 2%;
+}
+
+.navbar-brand{
+  font-size: 2rem !important;
 }
