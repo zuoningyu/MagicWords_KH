@@ -61,7 +61,8 @@ function clickWords() {
                 var cell = newRow.insertCell(j);
 
                 // add value to the cell
-                cell.innerHTML = array[navTitle][i*columns+j];
+                let text = array[navTitle][i*columns+j]
+                cell.innerHTML = '<button type="button" class="btn btn-outline-light btn-block btn-custom">' + text + '</button>';
             }
         }
   }
